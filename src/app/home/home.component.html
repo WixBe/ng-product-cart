@@ -1,0 +1,19 @@
+<section class="container">
+    <h1 class="page-title">Desserts</h1>
+    <div class="home-page">
+        <div class="items">
+            <app-card
+                *ngFor="let card of home_info"
+                [itemImg]="card.itemImg"
+                [action]="card.action"
+                [actionDesc]="card.actionDesc"
+                [type]="card.type"
+                [name]="card.name"
+                [price]="card.price"
+            ></app-card>
+        </div>
+        <div class="cart">
+            <app-cart/>
+        </div>
+    </div>
+</section>
